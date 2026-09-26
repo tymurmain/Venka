@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viena</title>
+    <style>
+        :root {
+            --bg: #f4efe9;
+            --panel: rgba(255, 255, 255, 0.72);
+            --panel-strong: #ffffff;
+            --text: #1f1d1b;
+            --muted: #6f6965;
+            --line: rgba(31, 29, 27, 0.08);
+            --shadow: 0 22px 50px rgba(40, 31, 26, 0.08);
+            --accent: #b18a6a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(177, 138, 106, 0.12), transparent 25%),
+                linear-gradient(180deg, #f8f5f2 0%, var(--bg) 100%);
+            color: var(--text);
+        }
+
+        .page {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 56px 24px 80px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.6rem, 5vw, 5rem);
+            line-height: 0.96;
+            letter-spacing: -0.06em;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 18px auto 0;
+            color: var(--muted);
+            font-size: 1.06rem;
+            line-height: 1.7;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            align-items: start;
+            background: transparent;
+        }
+
+        .airbnb-embed-frame {
+            position: relative;
+            width: min(100%, 480px) !important;
+            height: 300 !important;
+            margin: 0 auto !important;
+            padding: 0;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            backdrop-filter: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: visible;
+        }
+
+        .airbnb-embed-frame:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 26px 55px rgba(40, 31, 26, 0.12);
+        }
+
+        .airbnb-embed-frame iframe,
+        .airbnb-embed-frame > iframe,
+        .airbnb-embed-frame > div {
+            border-radius: 18px !important;
+            border: 0 !important;
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding-top: 32px;
+            }
+
+            .grid {
+                gap: 18px;
+            }
+
+            .airbnb-embed-frame {
+                width: min(100%, 540px) !important;
+                height: 440px !important;
+                padding: 10px 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+            <h1></h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <main class="grid">
+            <div class="airbnb-embed-frame" data-id="1776885818002610497" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1776885818002610497?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1776885818002610497?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Жилье · Вена · ★Новое · 1 спальня · 1 кровать · 1,5 общей ванной</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="1628971306032611696" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1628971306032611696?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1628971306032611696?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Гостиница · Вена · ★4,47 · 1 спальня · 1 кровать · 1 отдельная ванная</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="1547914767375472556" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1547914767375472556?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1547914767375472556?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Жилье · Вена · ★4,25 · студия · 1 кровать · 1 ванная</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="1362461703733008076" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1362461703733008076?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1362461703733008076?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Жилье · Вена · ★4,52 · 1 спальня · 1 кровать · 1,5 ванной</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="1491065532833893311" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1491065532833893311?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1491065532833893311?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Жилье · Вена · ★4,4 · 1 спальня · 2 кровати · 1 ванная</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="1477256702388103830" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ru/rooms/1477256702388103830?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget">Просмотреть на Airbnb</a><a href="https://www.airbnb.ru/rooms/1477256702388103830?check_in=2026-10-03&amp;check_out=2026-10-04&amp;guests=2&amp;adults=2&amp;s=66&amp;source=embed_widget" rel="nofollow">Жилье · Вена · ★4,24 · 1 спальня · 2 кровати · 1 общая ванная</a><script async="" src="https://www.airbnb.ru/embeddable/airbnb_jssdk"></script></div>
+        </main>
+    </div>
+</body>
+</html>
